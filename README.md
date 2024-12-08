@@ -51,7 +51,7 @@ To run the docker
 
 `curl -X POST -F "file=@path_to_image/image.tif" http://localhost:8000/predict -o output_mask.png`
 
-5. `unet_model_48.pth`
+5. `unet_model_28.pth`
 
 The trained U-Net model weights file, saved in PyTorch's .pth format. It is loaded during deployment for inference.
 
