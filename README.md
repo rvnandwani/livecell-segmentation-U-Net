@@ -15,13 +15,12 @@ Ensure the following are installed on your machine:
 1. `data_torch.py`
 This file contains the `LIVCellDataset` class, a PyTorch-compatible dataset loader:
 
-* Reads images from a directory.
-* Processes annotations in COCO format.
+* Reads images and annotations from a directory.
 * Applies transformations for data augmentation and normalization.
 
 2. `model_training.ipynb` This Jupyter notebook contains the code for:
-* Loading the data using a custom PyTorch Dataset.
-* Training the U-Net model on the medical cell segmentation dataset.
+* Loading the data using a `LIVCellDataset` class.
+* Training the U-Net model on the dataset.
 * Testing and evaluating the model's performance.
 
 
@@ -54,7 +53,7 @@ To run the docker
 
 5. `unet_model_48.pth`
 
-The trained U-Net model file, saved in PyTorch's .pth format. It is loaded during deployment for inference.
+The trained U-Net model weights file, saved in PyTorch's .pth format. It is loaded during deployment for inference.
 
 7. `requirements.txt`
 
@@ -101,12 +100,6 @@ Send a POST request to the /predict endpoint with an image file:
 `curl -X POST -F "file=@path_to_image/image.tif" http://localhost:8000/predict -o output_mask.png`
 
 The predicted segmentation mask will be saved as output_mask.png.
-Example Workflow
-
-Train the U-Net model using model_training.ipynb.
-Evaluate and save the model weights.
-Deploy the model with Docker using main.py and Dockerfile.
-Perform inference by sending images to the FastAPI endpoint.
 
 ## References
 
