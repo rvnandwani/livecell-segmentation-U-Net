@@ -12,7 +12,7 @@ Ensure the following are installed on your machine:
 
 ## Files Overview
 
-1. `data_loader.py`
+1. `data_torch.py`
 This file contains the `LIVCellDataset` class, a PyTorch-compatible dataset loader:
 
 * Reads images from a directory.
