@@ -101,6 +101,12 @@ Send a POST request to the /predict endpoint with an image file:
 
 The predicted segmentation mask will be saved as output_mask.png.
 
+## TO-DO
+
+* Calculate Precession and Recall values, along with Jaccard Index along with model AP
+* Test other models for accuracy and latency
+* Evaluate quantitaviely as well as visually the examples with bad accuracy metric and try and understand the edge cases
+
 ## References
 
 * [U-Net PyTorch Example](https://pytorch.org/hub/mateuszbuda_brain-segmentation-pytorch_unet/)
