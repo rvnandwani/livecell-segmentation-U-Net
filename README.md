@@ -107,6 +107,18 @@ The predicted segmentation mask will be saved as output_mask.png.
 * Test other models for accuracy and latency
 * Evaluate quantitaviely as well as visually the examples with bad accuracy metric and try and understand the edge cases
 
+## Results
+
+<div style="display: flex; justify-content: center;">
+  <img src="img_test_docker.tif" alt="Image 1" style="width: 200px; height: 200px; object-fit: cover; margin-right: 10px;">
+  <img src="segmentation_mask.png" alt="Image 2" style="width: 200px; height: 200px; object-fit: cover;">
+</div>
+
+<div style="display: flex; justify-content: center;">
+  <img src="img_test_docker_1.tif" alt="Image 1" style="width: 200px; height: 200px; object-fit: cover; margin-right: 10px;">
+  <img src="segmentation_mask_1.png" alt="Image 2" style="width: 200px; height: 200px; object-fit: cover;">
+</div>
+
 ## References
 
 * [U-Net PyTorch Example](https://pytorch.org/hub/mateuszbuda_brain-segmentation-pytorch_unet/)
